@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction) getFormData;
 
 @end
 
