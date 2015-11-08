@@ -7,6 +7,7 @@
 //
 
 #import "ContactFormViewController.h"
+#import "Contact.h"
 
 @interface ContactFormViewController ()
 
@@ -16,16 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)getFormData {
-    NSLog(@"The button has been clicked...");
+    Contact *contact = [[Contact alloc] init];
+    
+    contact.name    = [self.name    text];
+    contact.phone   = [self.phone   text];
+    contact.email   = [self.email   text];
+    contact.address = [self.address text];
+    contact.site    = [self.site    text];
+    
+    NSLog(@"Contact information: %@", contact);
 }
 
 @end

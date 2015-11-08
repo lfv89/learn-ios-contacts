@@ -15,6 +15,7 @@
 		7587B3C11BEFB40600557EE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3C01BEFB40600557EE7 /* Images.xcassets */; };
 		7587B3C41BEFB40600557EE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3C21BEFB40600557EE7 /* LaunchScreen.xib */; };
 		7587B3D01BEFB40600557EE7 /* learn_ios_contactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3CF1BEFB40600557EE7 /* learn_ios_contactsTests.m */; };
+		75AAF7A11BF17B3500686812 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF7A01BF17B3500686812 /* Contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		7587B3C91BEFB40600557EE7 /* learn-ios-contactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "learn-ios-contactsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7587B3CE1BEFB40600557EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7587B3CF1BEFB40600557EE7 /* learn_ios_contactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learn_ios_contactsTests.m; sourceTree = "<group>"; };
+		75AAF79F1BF17B3500686812 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		75AAF7A01BF17B3500686812 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				7587B3BA1BEFB40600557EE7 /* ContactFormViewController.h */,
 				7587B3BB1BEFB40600557EE7 /* ContactFormViewController.m */,
 				7587B3BD1BEFB40600557EE7 /* Main.storyboard */,
+				75AAF79F1BF17B3500686812 /* Contact.h */,
+				75AAF7A01BF17B3500686812 /* Contact.m */,
 				7587B3C01BEFB40600557EE7 /* Images.xcassets */,
 				7587B3C21BEFB40600557EE7 /* LaunchScreen.xib */,
 				7587B3B71BEFB40600557EE7 /* learn_ios_contacts.xcdatamodeld */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AAF7A11BF17B3500686812 /* Contact.m in Sources */,
 				7587B3B61BEFB40600557EE7 /* AppDelegate.m in Sources */,
 				7587B3B91BEFB40600557EE7 /* learn_ios_contacts.xcdatamodeld in Sources */,
 				7587B3BC1BEFB40600557EE7 /* ContactFormViewController.m in Sources */,
@@ -420,6 +426,7 @@
 				7587B3D51BEFB40600557EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7587B3D61BEFB40600557EE7 /* Build configuration list for PBXNativeTarget "learn-ios-contactsTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				7587B3D81BEFB40600557EE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
