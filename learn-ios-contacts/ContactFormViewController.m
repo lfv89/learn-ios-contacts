@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Luis Vasconcellos. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ContactFormViewController.h"
 
-@interface ViewController ()
+@interface ContactFormViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ContactFormViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

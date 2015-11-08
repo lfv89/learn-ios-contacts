@@ -10,7 +10,7 @@
 		7587B3B31BEFB40600557EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3B21BEFB40600557EE7 /* main.m */; };
 		7587B3B61BEFB40600557EE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3B51BEFB40600557EE7 /* AppDelegate.m */; };
 		7587B3B91BEFB40600557EE7 /* learn_ios_contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3B71BEFB40600557EE7 /* learn_ios_contacts.xcdatamodeld */; };
-		7587B3BC1BEFB40600557EE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3BB1BEFB40600557EE7 /* ViewController.m */; };
+		7587B3BC1BEFB40600557EE7 /* ContactFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3BB1BEFB40600557EE7 /* ContactFormViewController.m */; };
 		7587B3BF1BEFB40600557EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3BD1BEFB40600557EE7 /* Main.storyboard */; };
 		7587B3C11BEFB40600557EE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3C01BEFB40600557EE7 /* Images.xcassets */; };
 		7587B3C41BEFB40600557EE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3C21BEFB40600557EE7 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		7587B3B41BEFB40600557EE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7587B3B51BEFB40600557EE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7587B3B81BEFB40600557EE7 /* learn_ios_contacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = learn_ios_contacts.xcdatamodel; sourceTree = "<group>"; };
-		7587B3BA1BEFB40600557EE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7587B3BB1BEFB40600557EE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7587B3BA1BEFB40600557EE7 /* ContactFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactFormViewController.h; sourceTree = "<group>"; };
+		7587B3BB1BEFB40600557EE7 /* ContactFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactFormViewController.m; sourceTree = "<group>"; };
 		7587B3BE1BEFB40600557EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7587B3C01BEFB40600557EE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7587B3C31BEFB40600557EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			children = (
 				7587B3B41BEFB40600557EE7 /* AppDelegate.h */,
 				7587B3B51BEFB40600557EE7 /* AppDelegate.m */,
-				7587B3BA1BEFB40600557EE7 /* ViewController.h */,
-				7587B3BB1BEFB40600557EE7 /* ViewController.m */,
+				7587B3BA1BEFB40600557EE7 /* ContactFormViewController.h */,
+				7587B3BB1BEFB40600557EE7 /* ContactFormViewController.m */,
 				7587B3BD1BEFB40600557EE7 /* Main.storyboard */,
 				7587B3C01BEFB40600557EE7 /* Images.xcassets */,
 				7587B3C21BEFB40600557EE7 /* LaunchScreen.xib */,
@@ -224,7 +224,7 @@
 			files = (
 				7587B3B61BEFB40600557EE7 /* AppDelegate.m in Sources */,
 				7587B3B91BEFB40600557EE7 /* learn_ios_contacts.xcdatamodeld in Sources */,
-				7587B3BC1BEFB40600557EE7 /* ViewController.m in Sources */,
+				7587B3BC1BEFB40600557EE7 /* ContactFormViewController.m in Sources */,
 				7587B3B31BEFB40600557EE7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
