@@ -15,7 +15,7 @@
 // se faz necessário ter a representação de um
 // objeto em formato NSString.
 
-- (NSString *) description {
+- (NSString *)description {
     return [NSString stringWithFormat:@"Name: %@, Phone: %@, Email: %@, Address: %@, Site: %@", self.name, self.phone, self.email, self.address, self.site];
 }
 

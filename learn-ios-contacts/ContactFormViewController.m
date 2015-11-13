@@ -15,6 +15,14 @@
 
 @implementation ContactFormViewController
 
+- (id)initWithCoder:(NSCoder *)coder {
+    if (self = [super initWithCoder:coder]) {
+        self.dao = [ContactDAO getInstance];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -32,7 +40,7 @@
     contact.address = [self.address text];
     contact.site    = [self.site    text];
     
-    NSLog(@"Contact information: %@", contact);
+    [self.dao addContact:contact];
 }
 
 @end

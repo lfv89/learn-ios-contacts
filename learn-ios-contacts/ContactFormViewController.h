@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContactDAO.h"
 
 @interface ContactFormViewController : UIViewController
 
@@ -31,6 +32,8 @@
 @property IBOutlet UITextField *address;
 @property IBOutlet UITextField *site;
 
+@property (strong) ContactDAO *dao;
+
 // O IBAction especifica ao Interface Builder
 // que esse método pode ser utilizado na view
 // como uma Action.
@@ -40,6 +43,7 @@
 // uma Action (View -> Controller)
 
 - (IBAction) getFormData;
+
 
 @end
 
