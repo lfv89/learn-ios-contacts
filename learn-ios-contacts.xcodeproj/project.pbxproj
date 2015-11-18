@@ -15,6 +15,7 @@
 		7587B3C11BEFB40600557EE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3C01BEFB40600557EE7 /* Images.xcassets */; };
 		7587B3C41BEFB40600557EE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7587B3C21BEFB40600557EE7 /* LaunchScreen.xib */; };
 		7587B3D01BEFB40600557EE7 /* learn_ios_contactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7587B3CF1BEFB40600557EE7 /* learn_ios_contactsTests.m */; };
+		758CF3D81BFD40AF000646FB /* ContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758CF3D71BFD40AF000646FB /* ContactsListViewController.m */; };
 		75AAF7A11BF17B3500686812 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AAF7A01BF17B3500686812 /* Contact.m */; };
 		75ED195E1BF55B8F0007FEAF /* ContactDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ED195D1BF55B8F0007FEAF /* ContactDAO.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,8 @@
 		7587B3C91BEFB40600557EE7 /* learn-ios-contactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "learn-ios-contactsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7587B3CE1BEFB40600557EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7587B3CF1BEFB40600557EE7 /* learn_ios_contactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learn_ios_contactsTests.m; sourceTree = "<group>"; };
+		758CF3D61BFD40AF000646FB /* ContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListViewController.h; sourceTree = "<group>"; };
+		758CF3D71BFD40AF000646FB /* ContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListViewController.m; sourceTree = "<group>"; };
 		75AAF79F1BF17B3500686812 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		75AAF7A01BF17B3500686812 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		75ED195C1BF55B8F0007FEAF /* ContactDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDAO.h; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				7587B3BA1BEFB40600557EE7 /* ContactFormViewController.h */,
 				75ED195C1BF55B8F0007FEAF /* ContactDAO.h */,
 				75ED195D1BF55B8F0007FEAF /* ContactDAO.m */,
+				758CF3D61BFD40AF000646FB /* ContactsListViewController.h */,
+				758CF3D71BFD40AF000646FB /* ContactsListViewController.m */,
 				7587B3BB1BEFB40600557EE7 /* ContactFormViewController.m */,
 				7587B3BD1BEFB40600557EE7 /* Main.storyboard */,
 				75AAF79F1BF17B3500686812 /* Contact.h */,
@@ -238,6 +243,7 @@
 				75ED195E1BF55B8F0007FEAF /* ContactDAO.m in Sources */,
 				7587B3BC1BEFB40600557EE7 /* ContactFormViewController.m in Sources */,
 				7587B3B31BEFB40600557EE7 /* main.m in Sources */,
+				758CF3D81BFD40AF000646FB /* ContactsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

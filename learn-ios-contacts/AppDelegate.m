@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ContactsListViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,25 @@
 
 @implementation AppDelegate
 
+// Esse é o método disparado quando a aplicação terminou de ser aberta.
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Instancia uma ContactsListViewController e a atribui para
+    // o rootViewController do objeto window. Isso faz com que
+    // a primeira tela que a aplicação exiba seja a lista
+    // de contatos.
+    ContactsListViewController *list = [ContactsListViewController new];
+    self.window.rootViewController = list;
+
+    // Toda aplicação iOS só pode ter 1 UIWindow ativa sendo exibida.
+    // Essa chamada faz com que a nossa UIWindow atual seja a
+    // UIWindow ativa.
+    [self.window makeKeyAndVisible];
+    
+    // Quando a aplicação estiver pronta para ser carregada,
+    // o método deve retornar YES
     return YES;
 }
 
