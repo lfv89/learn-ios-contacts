@@ -77,18 +77,6 @@
                                     <rect key="frame" x="120" y="28" width="98" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-J6-Idx">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Adicionar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="128" y="327" width="65" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="getFormData" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P76-NB-s2V"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sgr-GD-kBj">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,7 +125,6 @@
                                 <exclude reference="0YF-mJ-7Jz"/>
                                 <exclude reference="oIj-P2-j1K"/>
                                 <exclude reference="lB2-lO-QQN"/>
-                                <exclude reference="CoU-J6-Idx"/>
                                 <exclude reference="Sgr-GD-kBj"/>
                                 <exclude reference="MHk-Ue-bLK"/>
                                 <exclude reference="Bf4-eZ-jZ8"/>
@@ -151,7 +138,6 @@
                                 <include reference="0YF-mJ-7Jz"/>
                                 <include reference="oIj-P2-j1K"/>
                                 <include reference="lB2-lO-QQN"/>
-                                <include reference="CoU-J6-Idx"/>
                                 <include reference="Sgr-GD-kBj"/>
                                 <include reference="MHk-Ue-bLK"/>
                                 <include reference="Bf4-eZ-jZ8"/>

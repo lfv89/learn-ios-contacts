@@ -12,7 +12,7 @@
 @implementation ContactsListViewController
 
 - (id)init {
-    if (self = [super init]) {
+    if (self = [super init]) {        
         self.navigationItem.title = @"Contacts";
         
         UIBarButtonItem *showFormButton =

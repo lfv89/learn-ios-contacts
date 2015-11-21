@@ -33,6 +33,7 @@
 @property IBOutlet UITextField *site;
 
 @property (strong) ContactDAO *dao;
+@property (strong) Contact *contact;
 
 // O IBAction especifica ao Interface Builder
 // que esse método pode ser utilizado na view
@@ -42,8 +43,8 @@
 // da View para um Controller, o que caracteriza
 // uma Action (View -> Controller)
 
-- (IBAction) getFormData;
-
+- (IBAction)addContact;
+- (void)buildContact;
 
 @end
 

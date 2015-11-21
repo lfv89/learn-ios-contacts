@@ -18,29 +18,36 @@
 - (id)initWithCoder:(NSCoder *)coder {
     if (self = [super initWithCoder:coder]) {
         self.dao = [ContactDAO getInstance];
+        
+        self.navigationItem.title = @"Contact Form";
+        
+        UIBarButtonItem *addButton =
+            [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(addContact)];
+        self.navigationItem.rightBarButtonItem = addButton;
     }
     
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (IBAction)addContact {
+    [self buildContact];
+    [self.dao addContact:self.contact];
+    
+    // A contactFormViwController é exibida por um UINavigationController,
+    // logo possui acesso a referência dele. O método abaixo faz com que,
+    // após o contato ter sido adicionado, a lista de contatos seja
+    // novamente exibida com uma animação.
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-- (IBAction)getFormData {
-    Contact *contact = [[Contact alloc] init];
+- (void)buildContact {
+    self.contact = [[Contact alloc] init];
     
-    contact.name    = [self.name    text];
-    contact.phone   = [self.phone   text];
-    contact.email   = [self.email   text];
-    contact.address = [self.address text];
-    contact.site    = [self.site    text];
-    
-    [self.dao addContact:contact];
+    self.contact.name    = [self.name    text];
+    self.contact.phone   = [self.phone   text];
+    self.contact.email   = [self.email   text];
+    self.contact.address = [self.address text];
+    self.contact.site    = [self.site    text];
 }
 
 @end
