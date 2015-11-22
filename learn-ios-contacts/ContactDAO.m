@@ -50,4 +50,8 @@ static ContactDAO *dao = nil;
     return self.contacts[position];
 }
 
+- (void)removeContactAtPosition:(NSInteger)position {
+    [self.contacts removeObjectAtIndex:position];
+}
+
 @end

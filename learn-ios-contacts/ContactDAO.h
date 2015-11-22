@@ -15,6 +15,7 @@
 
 + (id)getInstance;
 - (void)addContact:(Contact *)contact;
+- (void)removeContactAtPosition:(NSInteger)position;
 - (Contact *)getContactAtPosition:(NSInteger)position;
 
 @end

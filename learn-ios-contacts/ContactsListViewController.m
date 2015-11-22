@@ -20,6 +20,8 @@
         UIBarButtonItem *showFormButton =
             [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showContactForm)];
         self.navigationItem.rightBarButtonItem = showFormButton;
+        
+        self.navigationItem.leftBarButtonItem = self.editButtonItem;
     }
     
     return self;
@@ -97,6 +99,13 @@
     cell.textLabel.text = contact.name;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.dao removeContactAtPosition:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 @end
