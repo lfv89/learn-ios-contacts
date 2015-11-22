@@ -35,15 +35,7 @@
 @property (strong) ContactDAO *dao;
 @property (strong) Contact *contact;
 
-// O IBAction especifica ao Interface Builder
-// que esse método pode ser utilizado na view
-// como uma Action.
-
-// Ou seja, nesse caso temos uma comunicação a partir
-// da View para um Controller, o que caracteriza
-// uma Action (View -> Controller)
-
-- (IBAction)addContact;
+- (void)addContact;
 - (void)buildContact;
 
 @end

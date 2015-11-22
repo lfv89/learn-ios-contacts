@@ -29,7 +29,7 @@
     return self;
 }
 
-- (IBAction)addContact {
+- (void)addContact {
     [self buildContact];
     [self.dao addContact:self.contact];
     

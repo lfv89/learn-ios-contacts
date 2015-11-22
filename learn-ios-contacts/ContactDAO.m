@@ -46,4 +46,8 @@ static ContactDAO *dao = nil;
     NSLog(@"Contacts: %@", self.contacts);
 }
 
+- (Contact *)getContactAtPosition:(NSInteger)position {
+    return self.contacts[position];
+}
+
 @end

@@ -12,7 +12,9 @@
 @implementation ContactsListViewController
 
 - (id)init {
-    if (self = [super init]) {        
+    if (self = [super init]) {
+        self.dao = [ContactDAO getInstance];
+        
         self.navigationItem.title = @"Contacts";
         
         UIBarButtonItem *showFormButton =
@@ -21,6 +23,14 @@
     }
     
     return self;
+}
+
+// Esse método garante que os contatos serão exibidos
+// após terem sido adicioandos. Sem ele, a tableView
+// nunca é recarregada, e nada aparece.
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
 
 - (void)showContactForm {
@@ -56,6 +66,37 @@
     // referência para o navigation controller corrnete.
     
     [self.navigationController pushViewController:form animated:YES];
+}
+
+// Esse método diz para a tableView quantas seções a lista
+// vai ter. OBS: Por padrão ele já retorna 1, aqui ele foi
+// sobrescrito mais por questão de clareza. Ele não
+// precisava ter sido sobrescrito.
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+// Esse método diz para a tableView quantas linhas a lista
+// vai ter. Esse método precisa obrigatoriamente ser
+// sobrescrito.
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dao.contacts count];
+}
+
+// Esse método diz para a tableView como cada célula de cada
+// linha vai ser configurada. É nele efetivamente que se diz
+// qual será o contéudo e o formato de cada linha.
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell =
+        [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    Contact *contact = [self.dao getContactAtPosition:indexPath.row];
+    cell.textLabel.text = contact.name;
+    
+    return cell;
 }
 
 @end

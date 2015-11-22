@@ -14,6 +14,7 @@
 @property (strong, readonly) NSMutableArray *contacts;
 
 + (id)getInstance;
-- (void)addContact:(Contact *) contact;
+- (void)addContact:(Contact *)contact;
+- (Contact *)getContactAtPosition:(NSInteger)position;
 
 @end
