@@ -53,6 +53,10 @@
     ContactFormViewController *form =
         [storyboard instantiateViewControllerWithIdentifier:@"ContactForm"];
     
+    if (self.selected) {
+        form.contact = self.selected;
+    }
+    
     // Com a referência para o ContactsFormViewController em mãos,
     // colocamos essa referência na pilha de navegação do
     // UINavigationController atual.
@@ -101,11 +105,20 @@
     return cell;
 }
 
+// Esse método é chamado assim que, após apertar no botão "Edit"
+// da lista, o usuário clica no "Delete" de um dos itens
+// da lista.
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.dao removeContactAtPosition:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selected = [self.dao getContactAtPosition:indexPath.row];
+    [self showContactForm];
 }
 
 @end

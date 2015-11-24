@@ -13,5 +13,6 @@
 @interface ContactsListViewController : UITableViewController
 
 @property ContactDAO *dao;
+@property Contact *selected;
 
 @end

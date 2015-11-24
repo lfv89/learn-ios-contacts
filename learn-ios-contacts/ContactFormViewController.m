@@ -29,6 +29,10 @@
     return self;
 }
 
+- (void)viewDidLoad {
+    [self populateFormWithContact];
+}
+
 - (void)addContact {
     [self buildContact];
     [self.dao addContact:self.contact];
@@ -48,6 +52,14 @@
     self.contact.email   = [self.email   text];
     self.contact.address = [self.address text];
     self.contact.site    = [self.site    text];
+}
+
+- (void)populateFormWithContact {
+    self.name.text    = self.contact.name;
+    self.phone.text   = self.contact.phone;
+    self.email.text   = self.contact.email;
+    self.address.text = self.contact.address;
+    self.site.text    = self.contact.site;
 }
 
 @end
