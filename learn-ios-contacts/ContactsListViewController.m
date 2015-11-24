@@ -72,6 +72,8 @@
     // referência para o navigation controller corrnete.
     
     [self.navigationController pushViewController:form animated:YES];
+    
+    self.selected = nil;
 }
 
 // Esse método diz para a tableView quantas seções a lista
